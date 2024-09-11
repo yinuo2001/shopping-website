@@ -1,0 +1,139 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.profile-info {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box-items {
+  padding: 20px;
+}
+
+.box-items h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.right input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.success-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  text-align: center;
+  z-index: 1000;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .box-items h1 {
+    font-size: 28px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .right {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-info {
+    padding: 15px;
+  }
+
+  .box-items h1 {
+    font-size: 24px;
+  }
+
+  .right label {
+    font-size: 0.9rem;
+  }
+
+  .right input {
+    padding: 10px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
